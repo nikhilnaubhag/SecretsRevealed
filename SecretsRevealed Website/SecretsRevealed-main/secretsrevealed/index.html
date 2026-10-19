@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b22">
+  <meta name="description" content="SecretsRevealed — a thoughtful digital library for Bible studies, journals, e-books, Christian reflections and interactive learning.">
+  <title>SecretsRevealed — Read. Reflect. Reveal.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="secretsrevealed-emblem.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="translations.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body class="intro-active">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <section class="opening-screen" id="openingScreen" role="dialog" aria-modal="true" aria-labelledby="openingTitle" aria-describedby="openingDescription">
+    <div class="opening-ambient opening-ambient-one" aria-hidden="true"></div><div class="opening-ambient opening-ambient-two" aria-hidden="true"></div>
+    <div class="opening-content">
+      <div class="opening-brand" aria-label="SecretsRevealed"><span class="opening-brand-name">Secrets<span>Revealed</span></span><span class="opening-brand-tagline">READ · REFLECT · REVEAL</span></div>
+      <p class="opening-eyebrow" data-i18n="openingEyebrow">A MOMENT OF STILLNESS · A WORLD OF DISCOVERY</p>
+      <div class="opening-book-stage" aria-hidden="true">
+        <div class="opening-rays"></div>
+        <div class="opening-book-shadow"></div>
+        <div class="opening-bible" id="openingBible">
+          <div class="opening-page-stack"></div>
+          <div class="opening-page opening-page-left"><span>THE WORD</span><i></i><i></i><i></i><b>TRUTH</b></div>
+          <div class="opening-page opening-page-right"><span>THE WORD</span><i></i><i></i><i></i><b>LIGHT</b></div>
+          <div class="opening-cover opening-cover-left"><span class="opening-cross">✝</span><span class="opening-cover-caption">HOLY BIBLE</span></div>
+          <div class="opening-cover opening-cover-right"><span class="opening-cover-mark">✦</span><span class="opening-cover-caption">SCRIPTURE</span></div>
+          <div class="opening-book-spine"></div>
+        </div>
+        <svg class="opening-dove" viewBox="0 0 180 140" role="img" aria-label="A dove flying upward from the open Bible into the sky">
+          <defs>
+            <linearGradient id="doveGold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff8e5"/><stop offset=".48" stop-color="#f0d8a1"/><stop offset="1" stop-color="#bd8b3f"/></linearGradient>
+            <linearGradient id="doveWing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf5"/><stop offset=".62" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d3ab60"/></linearGradient>
+          </defs>
+          <g class="dove-wings" stroke="#e5c98a" stroke-width="1.1" stroke-linejoin="round">
+            <path d="M78 83C56 76 34 55 29 24c20 7 42 24 61 51 5 3 9 5 13 7-8 4-17 4-25 1Z" fill="url(#doveWing)"/>
+            <path d="M90 79C89 53 105 27 136 14c-4 24-17 48-37 68-3 0-6-1-9-3Z" fill="url(#doveWing)"/>
+            <path d="M77 75C61 55 48 35 43 14c22 15 39 33 51 60" fill="none" stroke="#fff9ea" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M94 76c5-21 19-39 35-51M99 78c11-13 20-27 25-40" fill="none" stroke="#fff8e6" stroke-width="1.5" stroke-linecap="round"/>
+          </g>
+          <g stroke="#cda55e" stroke-width=".85" stroke-linejoin="round">
+            <path d="M48 82 18 69 33 89 12 101 45 98 60 91Z" fill="url(#doveGold)"/>
+            <path d="M43 85 25 80M43 91 27 96" fill="none" stroke="#fff1ce" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M45 81C58 68 82 65 102 72c11-11 20-19 31-18 9 1 14 8 11 16 8-2 17-2 25 0l-15 9c-7 11-20 16-36 14-16 14-39 17-58 6-8-4-13-10-15-18Z" fill="url(#doveGold)"/>
+            <path d="M103 72c12-10 24-17 32-15 4 1 7 5 7 9-5 6-12 9-21 10Z" fill="url(#doveWing)"/>
+            <path d="M163 70 179 66 164 77Z" fill="#c89848" stroke="none"/>
+            <circle cx="148" cy="64" r="1.9" fill="#443321" stroke="none"/>
+            <path d="M67 86c11 3 22 7 31 12M85 80c9 1 16 3 22 7" fill="none" stroke="#fff7e0" stroke-width="1.2" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <h1 id="openingTitle"><span data-i18n="heroLine1">Some truths are</span><br><em data-i18n="heroLine2">worth discovering.</em></h1>
+      <p class="opening-description" id="openingDescription" data-i18n="openingDescription">A quiet place to read, reflect, and discover the living truth of Scripture.</p>
+      <div class="opening-actions"><button class="button button-primary opening-enter" id="enterWebsite" type="button"><span data-i18n="openingEnter">Enter the sanctuary</span><span aria-hidden="true">↗</span></button><button class="opening-skip" id="skipOpening" type="button" data-i18n="openingSkip">Skip introduction</button></div>
+      <div class="opening-progress" aria-hidden="true"><span></span></div>
+    </div>
+  </section>
+
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="SecretsRevealed home">
+        <img class="brand-emblem" src="secretsrevealed-emblem.png" alt="" width="110" height="82">
+        <span class="brand-lockup"><span class="brand-wordmark">Secrets<span>Revealed</span></span><span class="brand-tagline-text">READ · REFLECT · REVEAL</span></span>
+      </a>
+      <div class="header-tools" aria-label="Website appearance and language">
+        <label class="visually-hidden" for="languageSelect">Choose language</label>
+        <select id="languageSelect" class="header-select" aria-label="Choose website language">
+          <option value="en">English</option><option value="hi">हिन्दी</option><option value="ne">नेपाली</option><option value="bn">বাংলা</option>
+        </select>
+        <label class="visually-hidden" for="themeSelect">Choose background colour</label>
+        <select id="themeSelect" class="header-select theme-select" aria-label="Choose background colour">
+          <option value="midnight">Midnight</option><option value="ocean">Deep ocean</option><option value="forest">Emerald forest</option><option value="plum">Royal plum</option><option value="warm">Ember bronze</option><option value="burgundy">Burgundy</option><option value="sapphire">Sapphire night</option><option value="teal">Aurora teal</option><option value="amethyst">Amethyst glow</option><option value="crimson">Crimson velvet</option><option value="pine">Pine sanctuary</option><option value="slate">Slate silver</option><option value="indigo">Indigo dusk</option>
+        </select>
+      </div>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+        <a href="#library" data-i18n="navLibrary">Library</a>
+        <a href="#revelation" data-i18n="navRevelation">Revelation</a>
+        <a href="#journals" data-i18n="navJournals">Journals</a>
+        <a href="#quiz" data-i18n="navQuiz">Bible Quiz</a>
+        <a href="#newsroom" data-i18n="navNewsroom">Newsroom</a>
+      </nav>
+      <button class="button button-small button-outline nav-feedback" type="button" data-feedback-open="Website">Share feedback <span aria-hidden="true">↗</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-star">✦</span> <span data-i18n="eyebrow">A digital sanctuary for curious hearts</span> <span class="eyebrow-line"></span></div>
+        <h1 id="heroTitle"><span data-i18n="heroLine1">Some truths are</span><br><em data-i18n="heroLine2">worth discovering.</em></h1>
+        <div class="about-intro"><h2 data-i18n="aboutTitle">About SecretsRevealed</h2><p class="hero-lede" data-i18n="aboutText">SecretsRevealed is a welcoming space to read Scripture, reflect with purpose, and reveal the timeless truths that shape a life of faith. Explore Bible studies, journals, e-books, and thoughtful perspectives that encourage curiosity, wisdom, and a closer walk with Jesus.</p></div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#library"><span data-i18n="explore">Explore the library</span> <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#revelation"><span class="play-icon" aria-hidden="true">▷</span> <span data-i18n="begin">Begin with Revelation</span></a>
+        </div>
+        <div class="hero-trustline"><span class="avatar-stack" aria-hidden="true"><i>✦</i><i>✝</i><i>☼</i></span><span>Read at your pace. Return whenever you need.</span></div>
+      </div>
+
+      <div class="hero-art" aria-label="Decorative three-dimensional open book beneath a radiant celestial halo" role="img">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="halo-core"><span class="halo-cross">✝</span><span class="halo-spark spark-one">✦</span><span class="halo-spark spark-two">✧</span></div>
+        <div class="book-scene">
+          <div class="book-shadow"></div>
+          <div class="open-book">
+            <div class="book-page page-left"><span class="page-ornament">✧</span><span class="page-lines"></span><span class="page-script" id="verseLeft">In the beginning,</span><span class="page-rule"></span></div>
+            <div class="book-page page-right"><span class="page-ornament">✦</span><span class="page-lines"></span><span class="page-script" id="verseRight">God created the heavens.</span><span class="page-reference" id="verseReference">Genesis 1:1</span><span class="page-rule"></span></div>
+            <div class="book-spine"></div>
+          </div>
+          <div class="book-glow"></div>
+        </div>
+        <div class="floating-note note-top"><span>01 / SEEK</span><b>Wisdom begins<br>with wonder.</b></div>
+        <div class="floating-note note-bottom"><span class="note-dot"></span><span>Scripture · Study · Discovery</span></div>
+        <span class="art-star art-star-a">✧</span><span class="art-star art-star-b">✦</span><span class="art-star art-star-c">·</span>
+      </div>
+      <div class="hero-bottomline"><span>FAITH FOR THE SEEKING</span><span class="bottomline-rule"></span><span>ROOTED IN THE WORD</span><span class="bottomline-rule"></span><span>OPEN TO EVERYONE</span></div>
+    </section>
+
+    <section class="pillars section-shell" aria-label="Explore by intention">
+      <a class="pillar" href="#library"><span class="pillar-icon">⌘</span><span><b>Read deeply</b><small>E-books & studies</small></span><span class="pillar-arrow">↗</span></a>
+      <a class="pillar" href="#journals"><span class="pillar-icon">✎</span><span><b>Reflect honestly</b><small>Bible journals</small></span><span class="pillar-arrow">↗</span></a>
+      <a class="pillar" href="#quiz"><span class="pillar-icon">✦</span><span><b>Learn together</b><small>Quizzes & discovery</small></span><span class="pillar-arrow">↗</span></a>
+      <a class="pillar" href="#newsroom"><span class="pillar-icon">◉</span><span><b>Stay thoughtful</b><small>News & perspectives</small></span><span class="pillar-arrow">↗</span></a>
+    </section>
+
+    <section class="section section-shell" id="library" aria-labelledby="libraryTitle">
+      <div class="section-heading heading-row">
+        <div><span class="section-kicker">THE READING ROOM <span>✦</span></span><h2 id="libraryTitle">A library for the <em>curious.</em></h2><p class="section-intro">E-books, notes, study guides and writing—gathered in one calm place.</p></div>
+        <button class="text-link" type="button" data-feedback-open="Library">Suggest a resource <span>↗</span></button>
+      </div>
+      <div class="library-controls">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search titles, topics or Scripture..." autocomplete="off" aria-label="Search library"></label>
+        <div class="filter-row" role="group" aria-label="Filter library by category">
+          <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">All works</button>
+          <button type="button" class="filter-chip" data-filter="ebook" aria-pressed="false">E-books</button>
+          <button type="button" class="filter-chip" data-filter="journal" aria-pressed="false">Bible journals</button>
+          <button type="button" class="filter-chip" data-filter="revelation" aria-pressed="false">Revelation</button>
+          <button type="button" class="filter-chip" data-filter="news" aria-pressed="false">News & articles</button>
+        </div>
+      </div>
+      <div class="catalog-status" id="catalogStatus" role="status"><span class="status-dot"></span> Preview library · add your own Google Drive links to publish real work</div>
+      <div class="content-grid" id="contentGrid" aria-live="polite"></div>
+      <div class="section-end-row"><span class="subtle-note">Every published resource is read-only for visitors.</span><button class="text-link" type="button" data-feedback-open="Library">Share a reading suggestion <span>↗</span></button></div>
+    </section>
+
+    <section class="revelation-section" id="revelation" aria-labelledby="revelationTitle">
+      <div class="revelation-stars" aria-hidden="true"></div>
+      <div class="revelation-inner section-shell">
+        <div class="revelation-copy">
+          <div class="section-kicker kicker-gold">A JOURNEY THROUGH PROPHECY <span>✦</span></div>
+          <h2 id="revelationTitle">Unveil the wonder<br>of <em>Revelation.</em></h2>
+          <p>The final book of the Bible is rich with imagery, promise, worship and hope. Explore it patiently, with Scripture as your guide and room for thoughtful questions.</p>
+          <div class="revelation-points"><span><i>01</i> Read the text in context</span><span><i>02</i> Explore the symbols</span><span><i>03</i> Keep the hope in view</span></div>
+          <button class="button button-gold" type="button" id="revelationExplore">Explore Revelation resources <span aria-hidden="true">↗</span></button>
+          <button class="section-feedback-link" type="button" data-feedback-open="Book of Revelation">Share feedback on this study <span>↗</span></button>
+        </div>
+        <div class="revelation-art" aria-hidden="true">
+          <div class="revelation-ring ring-outer"></div><div class="revelation-ring ring-inner"></div>
+          <div class="revelation-glass"><span class="glass-star">✦</span><span class="glass-cross">✝</span><span class="glass-rays"></span></div>
+          <div class="seven-stars">✦ &nbsp; ✦ &nbsp; ✦<br>✦ &nbsp; ✦ &nbsp; ✦ &nbsp; ✦</div>
+          <div class="revelation-verse"><span>REVELATION 1:8</span><b>“I am Alpha<br>and Omega.”</b></div>
+        </div>
+      </div>
+      <div class="revelation-foot section-shell"><span>“Blessed is the one who reads aloud the words of this prophecy...”</span><span>REVELATION 1:3 · ESV</span></div>
+    </section>
+
+    <section class="section section-shell journal-section" id="journals" aria-labelledby="journalsTitle">
+      <div class="section-heading heading-row">
+        <div><span class="section-kicker">PAGES FOR THE SOUL <span>✦</span></span><h2 id="journalsTitle">Pause. Pray. <em>Write.</em></h2><p class="section-intro">A place for daily Scripture notes, honest questions and the small ways faith takes root.</p></div>
+        <button class="text-link" type="button" data-feedback-open="Bible journals">Share a journal idea <span>↗</span></button>
+      </div>
+      <div class="journal-layout">
+        <div class="journal-feature">
+          <div class="journal-feature-top"><span class="journal-label">A SIMPLE RHYTHM</span><span class="journal-flower">✳</span></div>
+          <div class="journal-pages" aria-hidden="true"><div class="journal-page-left"><span>READ</span><i></i><i></i><i></i><i></i></div><div class="journal-page-right"><span>REFLECT</span><b>“Speak, Lord...”</b><i></i><i></i><i></i></div></div>
+          <div class="journal-feature-foot"><span>Word · Wonder · Response</span><span class="journal-cross">✝</span></div>
+        </div>
+        <div class="journal-list-wrap"><div class="journal-list-heading"><h3>From the journal shelf</h3><span>01 — 04</span></div><div class="journal-list" id="journalGrid"></div><div class="journal-callout"><span class="callout-icon">✧</span><p>Not every page needs a perfect answer. Sometimes a faithful question is where the journey begins.</p></div></div>
+      </div>
+      <div class="section-end-row"><span class="subtle-note">These pages are for reading and reflection—not a substitute for a personal Bible.</span><button class="text-link" type="button" data-feedback-open="Bible journals">Tell me what would help you <span>↗</span></button></div>
+    </section>
+
+    <section class="quiz-section" id="quiz" aria-labelledby="quizTitle">
+      <div class="quiz-shell section-shell">
+        <div class="quiz-intro"><span class="section-kicker kicker-lilac">A MOMENT OF DISCOVERY <span>✦</span></span><h2 id="quizTitle">Test what you know.<br><em>Grow as you go.</em></h2><p>Take a quick Bible quiz, learn from each answer, and keep exploring. This short starter quiz is just for practice.</p><div class="quiz-stats"><div><b>05</b><span>QUESTIONS</span></div><div><b>∞</b><span>ROOM TO GROW</span></div></div><button class="section-feedback-link" type="button" data-feedback-open="Bible quiz">Suggest a quiz topic <span>↗</span></button></div>
+        <div class="quiz-card" id="quizPanel" aria-live="polite">
+          <div class="quiz-card-top"><span><i class="quiz-live-dot"></i> THE WORD CHALLENGE</span><span id="quizCounter">QUESTION 01 / 05</span></div>
+          <div class="quiz-progress"><span id="quizProgress"></span></div>
+          <div id="quizQuestionArea"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-shell newsroom-section" id="newsroom" aria-labelledby="newsTitle">
+      <div class="section-heading heading-row"><div><span class="section-kicker">THE OPEN DISPATCH <span>✦</span></span><h2 id="newsTitle">Faith in the <em>conversation.</em></h2><p class="section-intro">Articles, reflections and carefully considered updates from a Christian point of view.</p></div><button class="text-link" type="button" data-feedback-open="Newsroom">Recommend a topic <span>↗</span></button></div>
+      <div class="news-grid" id="newsGrid"></div>
+      <p class="editorial-note"><span>✧</span> Published articles will be added by the site owner. News items should include dates and sources so readers can check the original context.</p>
+      <div class="section-end-row"><span class="subtle-note">Have a question, correction or thoughtful response?</span><button class="text-link" type="button" data-feedback-open="Newsroom">Send editorial feedback <span>↗</span></button></div>
+    </section>
+
+    <section class="closing-cta section-shell" aria-labelledby="closingTitle">
+      <div class="closing-ornament" aria-hidden="true">✧</div>
+      <span class="section-kicker kicker-gold">YOUR NEXT CHAPTER STARTS HERE</span>
+      <h2 id="closingTitle">Come with questions.<br><em>Leave with something to ponder.</em></h2>
+      <p>Whether you are opening the Bible for the first time or returning to a familiar passage, there is always more to discover.</p>
+      <div class="closing-actions"><a class="button button-primary" href="#library">Find something to read <span>↗</span></a><button class="button button-outline" type="button" data-feedback-open="Website">Share your thoughts <span>↗</span></button></div>
+      <div class="closing-bottom"><span>GRACE FOR THE JOURNEY</span><span class="closing-line"></span><span>TRUTH FOR THE SEEKING</span><span class="closing-line"></span><span>HOPE IN JESUS</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-main section-shell">
+      <div class="footer-brand-col"><a class="brand footer-brand" href="#top" aria-label="SecretsRevealed home"><img class="brand-emblem footer-brand-emblem" src="secretsrevealed-emblem.png" alt="" width="52" height="34"><span class="brand-lockup"><span class="brand-wordmark">Secrets<span>Revealed</span></span><span class="brand-tagline-text">READ · REFLECT · REVEAL</span></span></a><p>A growing digital shelf for Scripture, Christian writing, journals and thoughtful discovery.</p><a class="footer-email" href="mailto:nikhilnaubhag777@gmail.com">nikhilnaubhag777@gmail.com <span>↗</span></a></div>
+      <div class="footer-links"><h3>EXPLORE</h3><a href="#library">Reading library</a><a href="#revelation">Book of Revelation</a><a href="#journals">Bible journals</a><a href="#quiz">Bible quiz</a><a href="#newsroom" data-i18n="navNewsroom">Newsroom</a></div>
+      <div class="footer-links"><h3>LET'S IMPROVE IT</h3><p>Your thoughts can help this library serve readers better.</p><button class="button button-outline footer-feedback" type="button" data-feedback-open="Footer">Send feedback <span>↗</span></button><a href="mailto:nikhilnaubhag777@gmail.com?subject=SecretsRevealed%20website">Contact the creator</a></div>
+    </div>
+    <div class="footer-bottom section-shell"><span>© <span id="yearNow">2026</span> SecretsRevealed. Created with purpose.</span><span class="footer-signoff">Made by <strong>Nikhil Darjee</strong> <span aria-hidden="true">✦</span></span><a href="#top" class="back-top">Back to top ↑</a></div>
+    <p class="footer-disclaimer section-shell">The site is a personal publishing project. Scripture quotations should be attributed to their translation; article sources should be cited. The website does not represent an official church organization unless explicitly stated.</p>
+  </footer>
+
+  <dialog class="feedback-modal" id="feedbackModal" aria-labelledby="feedbackTitle">
+    <form id="feedbackForm" class="modal-card">
+      <button type="button" class="modal-close" data-close-modal aria-label="Close feedback form">×</button>
+      <span class="section-kicker">YOUR VOICE MATTERS <span>✦</span></span>
+      <h2 id="feedbackTitle">Help this space <em>grow.</em></h2>
+      <p class="modal-intro">Share a thought, report a problem, suggest a topic or tell me what you would love to read next.</p>
+      <input type="hidden" name="section" id="feedbackSection" value="Website">
+      <input type="hidden" name="itemTitle" id="feedbackItem" value="">
+      <div class="form-grid"><label>Your name <span>(optional)</span><input type="text" name="name" maxlength="100" placeholder="How should I address you?"></label><label>Email <span>(optional)</span><input type="email" name="email" maxlength="200" placeholder="For a reply, if needed"></label></div>
+      <label>Feedback type<select name="kind"><option value="General feedback">General feedback</option><option value="Content suggestion">Suggest content</option><option value="Correction">Correction / source note</option><option value="Technical issue">Website issue</option><option value="Encouragement">Encouragement</option></select></label>
+      <fieldset class="rating-field"><legend>How was your experience?</legend><div class="rating-options"><label><input type="radio" name="rating" value="1"><span>1</span></label><label><input type="radio" name="rating" value="2"><span>2</span></label><label><input type="radio" name="rating" value="3" checked><span>3</span></label><label><input type="radio" name="rating" value="4"><span>4</span></label><label><input type="radio" name="rating" value="5"><span>5</span></label></div><div class="rating-labels"><span>Needs work</span><span>Excellent</span></div></fieldset>
+      <label>Your message<textarea name="message" required minlength="5" maxlength="4000" rows="4" placeholder="Write your feedback here..."></textarea></label>
+      <label class="honeypot" aria-hidden="true">Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      <p class="form-privacy">Your message is intended for the site owner. Do not include private medical, financial or other sensitive information.</p>
+      <div class="modal-actions"><button class="button button-primary" type="submit">Send feedback <span>↗</span></button><span id="feedbackStatus" role="status" aria-live="polite"></span></div>
+    </form>
+  </dialog>
+
+  <dialog class="reader-modal" id="readerModal" aria-labelledby="readerTitle">
+    <div class="reader-shell"><div class="reader-toolbar"><div><span class="section-kicker">SECRETSREVEALED READER</span><h2 id="readerTitle">Reading resource</h2><p id="readerMeta"></p></div><button type="button" class="modal-close" data-close-reader aria-label="Close reader">×</button></div><div class="reader-content" id="readerContent"><div class="reader-empty"><span>✧</span><h3>Let the reading begin.</h3><p>Documents shared publicly by the site owner can be opened here.</p></div><iframe id="readerFrame" title="Selected reading document" loading="lazy" referrerpolicy="no-referrer" allow="fullscreen" hidden></iframe></div><div class="reader-bottom"><span>For the best experience, use the original document link if the preview does not load.</span><a id="readerExternal" class="text-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Open original ↗</a></div></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
